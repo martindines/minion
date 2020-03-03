@@ -103,6 +103,14 @@ class RunCommand extends Command
     }
 
     /**
+     * Compatibility
+     */
+    public function handle()
+    {
+        return $this->fire();
+    }
+
+    /**
      * Get the console command options.
      *
      * @return array
